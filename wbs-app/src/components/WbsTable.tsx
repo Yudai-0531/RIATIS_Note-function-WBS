@@ -31,10 +31,10 @@ export default function WbsTable({ treeTasks, onUpdate, onDelete, onAddTask }: W
 
       {/* Table */}
       <div className="flex-1 overflow-auto">
-        <table className="w-full">
+        <table className="w-full" style={{ minWidth: "600px" }}>
           <thead>
             <tr className="border-b border-neutral-700 text-neutral-400 text-xs uppercase tracking-wider">
-              <th className="text-left py-2 px-2 font-medium">Task</th>
+              <th className="text-left py-2 px-2 font-medium min-w-[140px]">Task</th>
               <th className="text-left py-2 px-2 font-medium w-[130px]">Start</th>
               <th className="text-left py-2 px-2 font-medium w-[130px]">End</th>
               <th className="text-left py-2 px-2 font-medium w-[150px]">Progress</th>
